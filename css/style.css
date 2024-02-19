@@ -1,0 +1,127 @@
+/* RESET */
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+img{
+	max-width: 100%;
+}  
+
+
+a{
+	text-decoration: none;
+	color: currentColor;
+}
+
+menu, ul, ol{
+	list-style: none;
+}
+
+button{
+    border: none;
+}
+
+/* LAYOUT */
+
+#app{
+    height: 100vh;
+    background-color: black;
+}
+
+.row{
+    display: flex;
+    flex-wrap: nowrap;
+    
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: #EAEAEA;
+}
+
+
+
+/* APP BODY */
+.app_body{
+    height: 100%;
+}
+
+.contacts{
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: aqua;
+    min-height: 100%;
+    display: none;
+}
+
+.contacts_header{
+    background-color: darkorange;
+}
+
+.contacts_notifications{
+    background-color: hotpink;
+}
+
+.contacts_search{
+    background-color: mediumseagreen;
+}
+
+.contacts_list{
+    background-color: deeppink;
+    flex-grow: 1;
+}
+
+.chat{
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: blue;
+    min-height: 100%;
+    flex-grow: 1;
+}
+
+
+.chat_header{
+    background-color: blueviolet;
+}
+
+.chat_main{
+    background-color: brown;
+    flex-grow: 1;
+}
+
+.chat_footer{
+    background-color: chartreuse;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 576px){
+   .contacts{
+    display: flex;
+   }
+
+}
+
+@media (min-width: 992px){
+    #app{
+        padding: 50px 0;
+    }
+    
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    
+
+
+}
