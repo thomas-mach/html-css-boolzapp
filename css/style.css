@@ -29,7 +29,7 @@ button{
 #app{
     height: 100vh;
     width: 100vw;
-    background-color: black;
+    background-color: #DADBD7;
 }
 
 .row{
@@ -56,10 +56,6 @@ button{
     background-color: aqua;
     min-height: 100%;
     display: none;
-}
-
-.contacts_header{
-    background-color: darkorange;
 }
 
 .contacts_notifications{
@@ -115,6 +111,9 @@ button{
 }
 
 /* CONTACTS */
+i{
+    color: black;
+}
 
 .avatar_io img{
     width: 50px;
@@ -125,6 +124,7 @@ button{
 }
 
 .contacts_header{
+    background-color: #EAEAEA;
     justify-content: space-between;
     padding: 10px;
 }
@@ -133,10 +133,25 @@ button{
 .contacts_header_nav{
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
-/* contact_list */
+.contacts_header_nav i{
+    color: #B0B0B0;
+}
+
+/* contact_card */
+.contacts_notifications{
+    justify-content: space-between;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px;
+}
+
+.notification_content{
+    flex-direction: column;
+    
+}
 
 .avatar img{
     width: 50px;
@@ -147,12 +162,29 @@ button{
 }
 
 .contact_card{
+    background-color: #FFFFFF;
     padding: 10px;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
+    border-bottom: 1px solid #F5F5F5;
 }
 
+.name{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.mesage{
+    font-size: 14px;
+    color: #B9BBBC;
+}
+
+.time{
+    align-self: flex-start;
+    font-size: 14px;
+    color: #B9BBBC;
+}
 
 @media (min-width: 576px){
    .contacts{
