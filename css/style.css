@@ -28,6 +28,7 @@ button{
 
 #app{
     height: 100vh;
+    width: 100vw;
     background-color: black;
 }
 
@@ -40,14 +41,13 @@ button{
 .container{
     height: 100%;
     width: 100%;
-    background-color: #EAEAEA;
+    background-color: #ef2727;
 }
 
-
-
 /* APP BODY */
-.app_body{
-    height: 100%;
+ .app_body{
+    min-height: 100%;
+    max-width: 100%;
 }
 
 .contacts{
@@ -89,24 +89,86 @@ button{
 }
 
 .chat_main{
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: center;
     background-color: brown;
     flex-grow: 1;
 }
 
 .chat_footer{
     background-color: chartreuse;
+} 
+
+.mesage1{
+    width: 30%;
+    height: 30%;
+    background-color: aquamarine;
+    
+}
+
+.mesage2{
+    width: 30%;
+    height: 30%;
+    background-color: burlywood;
+    
+}
+
+/* CONTACTS */
+
+.avatar_io img{
+    width: 50px;
+    height: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: block;
+}
+
+.contacts_header{
+    justify-content: space-between;
+    padding: 10px;
 }
 
 
+.contacts_header_nav{
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
 
+/* contact_list */
 
+.avatar img{
+    width: 50px;
+    height: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: block;
+}
 
-
+.contact_card{
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
 
 
 @media (min-width: 576px){
    .contacts{
     display: flex;
+   }
+
+   .contact_info{
+    display: none;
+   }
+
+   .time{
+    display: none;
+   }
+
+   .contacts_header_nav{
+    display: none;
    }
 
 }
@@ -119,9 +181,17 @@ button{
     .container{
         width: 90%;
         margin: 0 auto;
-    }
+    } 
 
+    .contact_info{
+        display: flex;
+       }
     
-
-
+       .time{
+        display: flex;
+       }
+    
+       .contacts_header_nav{
+        display: flex;
+       }
 }
