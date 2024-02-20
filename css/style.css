@@ -53,6 +53,10 @@ menu, ul, ol{
     display: none;
 }
 
+.contacts_list{
+    overflow: auto;
+}
+
 .avatar_io img{
     width: 50px;
     aspect-ratio: 1;
