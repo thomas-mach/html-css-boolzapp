@@ -237,6 +237,7 @@ menu, ul, ol{
     flex-direction: column;
     justify-content: space-between;
     gap: 20px;
+    position: relative;
 }
 
 .mesage_arrow{
@@ -250,7 +251,6 @@ menu, ul, ol{
     background-color: #f9f9f9;
     padding: 5px;
     font-size: 14px;
-    min-width: 140px;
     display: none;
     position: absolute;
     flex-direction: column;
