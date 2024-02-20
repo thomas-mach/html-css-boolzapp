@@ -215,8 +215,9 @@ button{
 /* CHAT */
 
 .chat .chat_main{
-    padding: 100px;
+    padding: 60px;
     background-image: url('../img 3/mine.jpg');
+    overflow: auto;
 }
 
 .chat .chat_header{
@@ -287,6 +288,14 @@ button{
    }
 
    .contacts_header_nav{
+    display: none;
+   }
+
+   .contacts_notifications{
+    display: none;
+   }
+
+   .contacts_search{
     display: none;
    }
 
